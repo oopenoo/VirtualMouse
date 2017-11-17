@@ -1,12 +1,39 @@
 VirtualMouse
 ============
 
+基于 VirtualMouse 进行的优化，让键盘更像是个鼠标按钮，可以自定义按键
+
+##关于 - About
+
+原作者(Author): wid
+
+博客(Blog): http://www.cnblogs.com/mr-wid
+
+自定义配置文件，可以自定义几个功能按键，不能是组合键。
+```ini
+;
+[keys]
+LEFT_CLICK=0x64
+MIDDLE_PRESS=0x65
+RIGHT_CLICK=0x66
+LEFT_DOWN_SWITCH=0x6B
+LEFT_CLICK_X10=0x68
+```
+
+
+功能参考
+
+```c
 #define ID_HOT_LEFT_CLICK 10012 
 #define ID_HOT_RIGHT_CLICK 10013 
 #define ID_HOT_MIDDLE_PRESS 10016 
 #define ID_HOT_LEFT_DN_SWITCH 10019 
-#define ID_HOT_LEFT_CLICK_X10 10020 
+#define ID_HOT_LEFT_CLICK_X10 10020 // 连续点击10次左键
+```
 
+按键参考
+
+```c
 #define VK_LBUTTON        0x01
 #define VK_RBUTTON        0x02
 #define VK_CANCEL         0x03
@@ -165,13 +192,4 @@ VirtualMouse
 #define VK_LAUNCH_MEDIA_SELECT 0xB5
 #define VK_LAUNCH_APP1         0xB6
 #define VK_LAUNCH_APP2         0xB7
-
-
-
-##关于 - About
-
-作者(Author): wid
-
-博客(Blog): http://www.cnblogs.com/mr-wid
-
-
+```
