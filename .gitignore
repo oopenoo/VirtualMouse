@@ -15,3 +15,11 @@
 *.exe
 *.out
 *.app
+*.sdf
+*.opensdf
+*.suo
+*.aps
+ipch
+Debug
+Release
+

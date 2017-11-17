@@ -23,7 +23,7 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine
 	wndclass.hIcon			= LoadIcon( hInstance, MAKEINTRESOURCE(IDI_ICON_LEFT) );
 	wndclass.cbClsExtra		= 0;
 	wndclass.cbWndExtra		= 0;
-	wndclass.hbrBackground	= CreateSolidBrush( RGB(236, 233, 216) );
+	wndclass.hbrBackground	= CreateSolidBrush( GetSysColor(COLOR_BTNFACE) ); // RGB(236, 233, 216)
 	wndclass.lpszClassName	= szAppName;
 	wndclass.lpszMenuName	= NULL;
 

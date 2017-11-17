@@ -6,4 +6,6 @@
 
 //////////////////////////////////////////////////////////////////////////
 
-void InitWndUI( HWND, HINSTANCE, HWND *, HFONT, LOGFONT );		//初始化UI
+void InitWndUI( HWND, HINSTANCE, HWND *);		//初始化UI
+void freeTextFont();
+HFONT getTextFont(int idx);

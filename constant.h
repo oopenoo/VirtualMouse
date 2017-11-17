@@ -28,6 +28,8 @@
 
 #define		ID_HOT_WND_HIDE		10017			//隐藏\显示窗口
 #define		ID_HOT_PAUSE		10018			//暂停\继续热键
+#define		ID_HOT_LEFT_DN_SWITCH	10019			// 拖动
+#define		ID_HOT_LEFT_CLICK_X10	10020			// 左键x10
 
 //////////////////////////////////////////////////////////////////////////
 
